@@ -14,35 +14,48 @@
             <h2 class="tituloRegistro">Registro</h2>
 
             <label class="labelForm" for="nombre">Nombre</label> 
-            <input type="text" name="nombre" onfocus="cambiarColorLabel('nombre')" onblur="restaurarColorLabel('nombre')">
+            <input type="text" id="nombre" name="nombre" onfocus="cambiarColorLabel('nombre')" onblur="restaurarColorLabel('nombre')">
+            <div id="msjErrorNombre" class="divError"></div>
 
             <label class="labelForm" for="apellido">Apellido</label>
-            <input type="text" name="apellido" onfocus="cambiarColorLabel('apellido')" onblur="restaurarColorLabel('apellido')">
+            <input type="text" id="apellido" name="apellido" onfocus="cambiarColorLabel('apellido')" onblur="restaurarColorLabel('apellido')">
+            <div id="msjErrorApellido" class="divError"></div>
 
             <label class="labelForm" for="email">Email</label>
-            <input type="email" name="email" onfocus="cambiarColorLabel('email')" onblur="restaurarColorLabel('email')"> 
+            <input type="email" id="email" name="email" onfocus="cambiarColorLabel('email')" onblur="restaurarColorLabel('email')"> 
+            <div id="msjErrorEmail" class="divError"></div>
 
             <label class="labelForm" for="pais">Pais</label>
-            <input type="text" name="pais" onfocus="cambiarColorLabel('pais')" onblur="restaurarColorLabel('pais')"> 
+            <input type="text" id="pais" name="pais" onfocus="cambiarColorLabel('pais')" onblur="restaurarColorLabel('pais')">
+            <div id="msjErrorPais" class="divError"></div>
 
             <label class="labelForm" for="ciudad">Ciudad</label>
-            <input type="text" name="ciudad" onfocus="cambiarColorLabel('ciudad')" onblur="restaurarColorLabel('ciudad')"> 
+            <input type="text" id="ciudad" name="ciudad" onfocus="cambiarColorLabel('ciudad')" onblur="restaurarColorLabel('ciudad')">
+            <div id="msjErrorCiudad" class="divError"></div>
 
                 <div class="checkboxContainer">
-                    <input type="checkbox" name="hombre" onfocus="cambiarColorLabel('hombre')" onblur="restaurarColorLabel('hombre')">
+                    <input type="checkbox" id="hombre" name="hombre" onfocus="cambiarColorLabel('hombre')" onblur="restaurarColorLabel('hombre')">
                     <label class="sexo" for="hombre">hombre</label>
-                    <input type="checkbox" name="mujer"  onfocus="cambiarColorLabel('mujer')" onblur="restaurarColorLabel('mujer')">
+                    <input type="checkbox" id="mujer" name="mujer"  onfocus="cambiarColorLabel('mujer')" onblur="restaurarColorLabel('mujer')">
                     <label class="sexo" for="mujer">mujer</label>
+                    <div id="msjErrorSexo" class="divError"></div>
+
                 </div>
                 <br>
 
                 <label class="labelForm fecha" for="nacimiento">Fecha de nacimiento</label>
-                <input type="date"  name="nacimiento"  onfocus="cambiarColorLabel('nacimiento')" onblur="restaurarColorLabel('nacimiento')">
+                <input type="date" id="nacimiento" name="nacimiento"  onfocus="cambiarColorLabel('nacimiento')" onblur="restaurarColorLabel('nacimiento')">
+                <div id="msjErrorFecha" class="divError"></div>
+
                 
                     <label class="labelForm" for="contraseña">Contraseña</label>
-                    <input type="password"  onfocus="cambiarColorLabel('contraseña')" onblur="restaurarColorLabel('contraseña')"> 
+                    <input type="password" id="contraseña" onfocus="cambiarColorLabel('contraseña')" onblur="restaurarColorLabel('contraseña')"> 
+                    <div id="msjErrorContraseña" class="divError"></div>
+
                     <label class="labelForm" for="contraseñaRepetida">Repita la contraseña</label>
-                    <input type="password"  onfocus="cambiarColorLabel('contraseñaRepetida')" onblur="restaurarColorLabel('contraseñaRepetida')"> 
+                    <input type="password" id="contraseñaRepetida" onfocus="cambiarColorLabel('contraseñaRepetida')" onblur="restaurarColorLabel('contraseñaRepetida')"> 
+                    <div id="msjErrorContraseñaRepetida" class="divError"></div>
+
 
                 <button class="btn" type="submit">Registrarse</button>
             

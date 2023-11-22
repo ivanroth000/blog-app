@@ -136,3 +136,11 @@ input:focus{
     background-color: #46034f;
     color: white;
 }
+
+.error{
+    border: 2px solid red;
+}
+
+.divError{
+    color: rgb(189, 41, 41);
+}
