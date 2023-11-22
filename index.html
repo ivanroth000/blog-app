@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <h1>¡Bienvenido!</h1>
+    <h2>Complete sus datos para continuar</h2>
+    <div class="formContainer">
+        <form class="form">
+                <label class="labelForm" for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+
+                <label class="labelForm" for="apellido">Apellido</label>
+                <input type="text" name="apellido">
+
+                <label class="labelForm" for="email">Email</label>
+                <input type="email" name="email">
+
+                <label class="labelForm" for="pais">Pais</label>
+                <input type="text" name="pais">
+
+                <label class="labelForm" for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad">
+
+                <div class="checkboxContainer">
+                    <input type="checkbox" name="hombre">
+                    <label class="sexo" for="hombre">hombre</label>
+                    <input type="checkbox" name="mujer">
+                    <label class="sexo" for="mujer">mujer</label>
+                </div>
+                <br>
+
+                    <label class="labelForm" class="fecha" for="nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="nacimiento">
+                
+                <label class="labelForm" for="contraseña">Contraseña</label>
+                <input type="password">
+                <label class="labelForm" for="contraseñaRepetida">Repita la contraseña</label>
+                <input type="password">
+
+                
+                <button class="btn" type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
