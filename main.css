@@ -8,6 +8,7 @@ body{
     background: linear-gradient(to right, #991ab1, #d246ef);;
 }
 
+
 .titulo{
     display: flex;
     justify-content: center;
@@ -137,10 +138,12 @@ input:focus{
     color: white;
 }
 
-.error{
-    border: 2px solid red;
-}
 
 .divError{
     color: rgb(189, 41, 41);
+}
+
+.msjError{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 30px;
 }
