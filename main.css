@@ -6,16 +6,11 @@
 
 body{
     background-color:  #333333; 
-
-    
-
-
 }
 
 
 .titulo{
-    color: #f5f5f5; 
-    margin-top: 0;
+    color: #CCCCCC; 
     position: relative;
     left: 20%;
     font-family: 'Bebas Neue', sans-serif;
@@ -25,14 +20,14 @@ body{
     max-width: 300px; /* Ajusta el ancho máximo según tu preferencia */
 }
 
-span {
+.titulo span {
     /* Hace que las palabras sean más llamativas */
     margin: 0 10px; /* Ajusta el espacio entre las palabras según sea necesario */
     display: inline-block;
     font-weight: bold;
 }
   
-span::after {
+.titulo span::after {
     content: "..."; /* Añade puntos suspensivos después de cada palabra */
     
 }
@@ -44,6 +39,22 @@ span::after {
   color: #9c1caf;
 }
 
+.introduccionContainer{
+    max-width: 60%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.introduccion{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #CCCCCC; 
+    text-align: center; 
+    font-size: 20px;
+}
+
+.introduccion span{
+    
+    color: #9c1caf;
+}
 
 .tituloRegistro{
     display: flex;
