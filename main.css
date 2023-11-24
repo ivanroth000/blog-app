@@ -16,7 +16,7 @@ body{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
     font-size: 50px; /* Ajusta el tamaño del texto según tu preferencia */
-    line-height: 2; /* Ajusta el espacio entre líneas según tu preferencia */
+    line-height: 1.6; /* Ajusta el espacio entre líneas según tu preferencia */
     max-width: 300px; /* Ajusta el ancho máximo según tu preferencia */
 }
 
@@ -52,7 +52,6 @@ body{
 }
 
 .introduccion span{
-    
     color: #9c1caf;
 }
 
