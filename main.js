@@ -1,14 +1,18 @@
-function cambiarColorLabel(id) {
-   let label = document.querySelector(`label[for="${id}"]`);
-   label.style.color = '#b926d3'
-   label.style.fontSize = '18px'
-}
+// main.js
+import { cambiarColorLabel, restaurarColorLabel } from './login.js';
 
-function restaurarColorLabel(id) {
-    let label = document.querySelector(`label[for="${id}"]`);
-   label.style.color = 'black'
-   label.style.fontSize = '15px'
-}
+
+const idsParaCambiarColor = ['nombre', 'apellido', 'email', 'pais','ciudad', 'hombre','mujer', 'nacimiento', 'contrasenia','contraseniaRepetida'];
+cambiarColorLabel(idsParaCambiarColor);
+restaurarColorLabel(idsParaCambiarColor);
+
+idsParaCambiarColor.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.addEventListener('focus', () => cambiarColorLabel(id));
+        element.addEventListener('blur', () => restaurarColorLabel(id));
+    }
+});
 
 let formulario = document.querySelector('.form')
 let nombre = document.getElementById('nombre')
@@ -25,11 +29,10 @@ let elementos = document.querySelectorAll('.form input');
 let mensajesDeError = document.querySelectorAll('.form .divError');
 
 
-formulario.onsubmit = (e) => {
+function validarFormulario (formulario){
+    formulario.onsubmit = (e) => {
     e.preventDefault()
     let esValido = true
-// Remover la clase 'error' de todos los elementos
-elementos.forEach(elemento => elemento.classList.remove('error'));
 
 // Limpiar el contenido de los mensajes de error
 mensajesDeError.forEach(mensajeDeError => mensajeDeError.innerHTML = '');
@@ -48,5 +51,8 @@ elementos.forEach(elemento => {
     }
 });
 
-
+if (esValido) {
+    window.location.href = "home.html";
 }
+
+}}
