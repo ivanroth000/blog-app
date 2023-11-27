@@ -23,29 +23,29 @@
             <h2 class="tituloRegistro">Registro</h2>
 
             <label class="labelForm" for="nombre">Nombre</label> 
-            <input type="text" id="nombre" name="nombre" >
+            <input type="text" id="nombre" name="nombre" onfocus="cambiarColorLabel('nombre')" onblur="restaurarColorLabel('nombre')" >
             <div id="msjErrorNombre" class="divError"></div>
 
             <label class="labelForm" for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido">
+            <input type="text" id="apellido" name="apellido" onfocus="cambiarColorLabel('apellido')" onblur="restaurarColorLabel('apellido')">
             <div id="msjErrorApellido" class="divError"></div>
 
             <label class="labelForm" for="email">Email</label>
-            <input type="email" id="email" name="email"> 
+            <input type="email" id="email" name="email" onfocus="cambiarColorLabel('email')" onblur="restaurarColorLabel('email')"> 
             <div id="msjErrorEmail" class="divError"></div>
 
             <label class="labelForm" for="pais">Pais</label>
-            <input type="text" id="pais" name="pais">
+            <input type="text" id="pais" name="pais" onfocus="cambiarColorLabel('pais')" onblur="restaurarColorLabel('pais')">
             <div id="msjErrorPais" class="divError"></div>
 
             <label class="labelForm" for="ciudad">Ciudad</label>
-            <input type="text" id="ciudad" name="ciudad">
+            <input type="text" id="ciudad" name="ciudad" onfocus="cambiarColorLabel('ciudad')" onblur="restaurarColorLabel('ciudad')">
             <div id="msjErrorCiudad" class="divError"></div>
 
                 <div class="checkboxContainer">
-                    <input type="checkbox" id="hombre" name="hombre">
+                    <input type="checkbox" id="hombre" name="hombre" onfocus="cambiarColorLabel('hombre')" onblur="restaurarColorLabel('hombre')">
                     <label class="sexo" for="hombre">hombre</label>
-                    <input type="checkbox" id="mujer" name="mujer">
+                    <input type="checkbox" id="mujer" name="mujer" onfocus="cambiarColorLabel('mujer')" onblur="restaurarColorLabel('mujer')">
                     <label class="sexo" for="mujer">mujer</label>
                     <div id="msjErrorSexo" class="divError"></div>
 
@@ -53,16 +53,16 @@
                 <br>
 
                 <label class="labelForm fecha" for="nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="nacimiento" name="nacimiento">
+                <input type="date" id="nacimiento" name="nacimiento" onfocus="cambiarColorLabel('nacimiento')" onblur="restaurarColorLabel('nacimiento')">
                 <div id="msjErrorNacimiento" class="divError"></div>
 
                 
                     <label class="labelForm" for="contrasenia">Contraseña</label>
-                    <input type="password" id="contrasenia"> 
+                    <input type="password" id="contrasenia" onfocus="cambiarColorLabel('contrasenia')" onblur="restaurarColorLabel('contrasenia')"> 
                     <div id="msjErrorContrasenia" class="divError"></div>
 
                     <label class="labelForm" for="contraseniaRepetida">Repita la contraseña</label>
-                    <input type="password" id="contraseniaRepetida"> 
+                    <input type="password" id="contraseniaRepetida" onfocus="cambiarColorLabel('contraseniaRepetida')" onblur="restaurarColorLabel('contraseniaRepetida')"> 
                     <div id="msjErrorContraseniaRepetida" class="divError"></div>
 
 
@@ -71,5 +71,5 @@
             </form>
     </div>
 </body>
-<script type="module" src="main.js" ></script>
+<script src="index.js" ></script>
 </html>
