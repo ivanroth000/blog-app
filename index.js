@@ -22,6 +22,7 @@ formulario.onsubmit = (e) => {
   let esValido = true;
 
   // Limpiar el contenido de los mensajes de error
+
   mensajesDeError.forEach((mensajeDeError) => (mensajeDeError.innerHTML = ""));
 
   elementos.forEach((elemento) => {
@@ -52,6 +53,7 @@ formulario.onsubmit = (e) => {
     msjErrorNacimiento.appendChild(msjMenorDeEdad);
   }
   //valida que solo un check-box este seleccionado
+
   if (
     (!hombreCheckbox.checked && !mujerCheckbox.checked) ||
     (hombreCheckbox.checked && mujerCheckbox.checked)
@@ -74,12 +76,23 @@ formulario.onsubmit = (e) => {
       );
       let parrafoErrorContrasenia = document.createElement("p");
       parrafoErrorContrasenia.classList.add("msjError");
-      parrafoErrorContrasenia.innerText = "Las contraseñas deben coincidir";
+      parrafoErrorContrasenia.innerText = "  Las contraseñas deben coincidir";
       msjErrorContrasenia.appendChild(parrafoErrorContrasenia);
     }
   }
   //dirige a la otra página si todo está ok
-  if (esValido) {
-    window.location.href = "home.html";
+  function registrar() {
+    // Solo permite la redirección si esValido es verdadero
+    if (esValido) {
+      // Obtén el valor del input
+      let nombre = document.getElementById("nombre").value;
+
+      // Almacena el nombre en localStorage
+      localStorage.setItem("nombre", nombre);
+
+      // Redirige al usuario a home.html
+      window.location.href = "home.html";
+    }
   }
+  registrar();
 };
