@@ -34,7 +34,10 @@ body {
 .titulo span:nth-child(3) {
   position: relative;
   left: 250px;
-  color: #9c1caf;
+  background: linear-gradient(#ff1cf7, #7b1db9);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .introduccionContainer {
@@ -50,7 +53,10 @@ body {
 }
 
 .introduccion span {
-  color: #9c1caf;
+  background: linear-gradient(#ff1cf7, #7b1db9);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tituloRegistro {
