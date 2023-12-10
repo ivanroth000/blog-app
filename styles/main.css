@@ -36,8 +36,8 @@ body {
   left: 250px;
   background: linear-gradient(#ff1cf7, #7b1db9);
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .introduccionContainer {
@@ -55,8 +55,8 @@ body {
 .introduccion span {
   background: linear-gradient(#ff1cf7, #7b1db9);
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tituloRegistro {

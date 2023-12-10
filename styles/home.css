@@ -9,7 +9,9 @@ body {
 }
 
 #saludo {
-    margin-top: 20px;
+  margin-top: 20px;
+  margin-left: 250px; /* Ancho del menú lateral */
+  margin-right: auto;
   text-align: center;
   color: #cccccc;
   font-family: "Bebas Neue", sans-serif;
@@ -18,51 +20,63 @@ body {
 }
 
 #saludo span {
-    background: linear-gradient(#ff1cf7, #7b1db9);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(#ff1cf7, #7b1db9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #bienvenida {
   text-align: center;
+  margin-left: 250px; /* Ancho del menú lateral */
+  margin-right: auto;
   color: #cccccc;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
 }
 
 #bienvenida span {
-    background: linear-gradient(#ff1cf7, #7b1db9);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(#ff1cf7, #7b1db9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*SideBar*/
 .sidebar {
-    height: 100%;
-    width: 250px; /* Ancho del menú lateral */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #cccccc;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    background: linear-gradient(#ff1cf7, #7b1db9);
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+}
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #cccccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: linear-gradient(#ff1cf7, #7b1db9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sidebar a:hover span {
+  background: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+.linksContainer{
+    margin-top: 18px;
+}
+
+main {
+  margin-left: 250px;
+  padding: 16px;
+}

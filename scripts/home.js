@@ -3,4 +3,3 @@ document.addEventListener("DOMContentLoaded", () => {
   let nombre = localStorage.getItem("nombre");
   saludo.innerHTML = `¡Bienvenido <span>${nombre}!</span>`;
 });
-
