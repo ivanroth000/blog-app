@@ -91,7 +91,7 @@ formulario.onsubmit = (e) => {
       localStorage.setItem("nombre", nombre);
 
       // Redirige al usuario a home.html
-      window.location.href = "./pages/home.html";
+      window.location.href = "./pages/escribir.html";
     }
   }
   registrar();

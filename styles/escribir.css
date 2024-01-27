@@ -62,7 +62,7 @@ body {
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar a:not(.escribir):hover{
   background: linear-gradient(#ff1cf7, #7b1db9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -76,7 +76,22 @@ body {
     margin-top: 18px;
 }
 
+.escribir{
+  background: linear-gradient(#ff1cf7, #7b1db9);
+  
+}
+
 main {
   margin-left: 250px;
   padding: 16px;
 }
+
+#editor{
+  background-color: #ffffff;
+  height: 500px;
+}
+
+.ql-toolbar{
+  background-color: #ffffff;
+}
+
