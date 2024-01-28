@@ -5,28 +5,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-let isBold = false;
-  let isItalic = false;
+// Luego, capturas el evento click del botón
+document.querySelector('button[type=submit]').addEventListener('click', function() {
+  // Obtienes el contenido del editor
+  let contenido = quill.root.innerHTML;
 
-  document.querySelector('.negrita').addEventListener('click', function() {
-    isBold = !isBold;
-  });
+  // Recuperas las entradas anteriores del localStorage
+  let entradas = JSON.parse(localStorage.getItem('entradasBlog')) || [];
 
-  document.querySelector('.italica').addEventListener('click', function() {
-    isItalic = !isItalic;
-  });
+  // Añades la nueva entrada al arreglo
+  entradas.push(contenido);
+  
 
-  document.querySelector('textarea').addEventListener('input', function(e) {
-    if (isBold) {
-      e.target.style.fontWeight = 'bold';
-    } else {
-      e.target.style.fontWeight = 'normal';
-    }
+  // Almacenas el arreglo actualizado en localStorage
+  localStorage.setItem('entradasBlog', JSON.stringify(entradas));
 
-    if (isItalic) {
-      e.target.style.fontStyle = 'italic';
-    } else {
-      e.target.style.fontStyle = 'normal';
-    }
-  });
+  // Rediriges al usuario a la página 'miBlog'
+  window.location.href = 'miBlog.html';
+});
+
+
 

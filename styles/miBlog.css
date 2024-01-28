@@ -62,7 +62,7 @@ body {
   transition: 0.3s;
 }
 
-.sidebar a:not(.escribir):hover{
+.sidebar a:not(.miBlog):hover{
   background: linear-gradient(#ff1cf7, #7b1db9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -76,7 +76,7 @@ body {
     margin-top: 18px;
 }
 
-.escribir{
+.miBlog{
   background: linear-gradient(#ff1cf7, #7b1db9);
   
 }
@@ -86,32 +86,28 @@ main {
   padding: 16px;
 }
 
-#editor{
-  background-color: #ffffff;
-  height: 400px;
+.divContenido{
+  background-color: #ffff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
 }
 
-.ql-toolbar{
-  background-color: #ffffff;
-}
-
-.btnPublicar{
+.leerMas{
   display: block;
   margin: 0 auto;
-  margin-top: 15px;
   width: 150px;
   height: 40px;
   border: 2px solid transparent; /* Ancho del borde y color transparente */
   /* Radio para hacer el borde circular */
   border-image: linear-gradient(to right, #ff1cf7, #7b1db9); /* Aplica un degradado horizontal de rojo a verde solo a los bordes del botón */
   border-image-slice: 1; /* Define cómo se corta el degradado (1 significa que se corta en el centro) */
-  background-color: #ffffff; /* Hace el fondo del botón transparente para que solo se vea el degradado en los bordes */
+  background-color: transparent; /* Hace el fondo del botón transparente para que solo se vea el degradado en los bordes */
   font-size: 18px;
 }
 
-.btnPublicar:hover{
+.leerMas:hover{
   background: linear-gradient(to right, #ff1cf7, #7b1db9); /* Cambia el color de fondo al pasar sobre el botón */
   color: #fff;
   border: none;
 }
-
