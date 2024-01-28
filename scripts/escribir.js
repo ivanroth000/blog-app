@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelector('button[type=submit]').addEventListener('click', function() {
   // Obtienes el contenido del editor
   let contenido = quill.root.innerHTML;
+  
+  if(contenido.trim() === '' || contenido.trim() === '<p><br></p>') {
+    alert('El contenido no puede estar vacío');
+    return;
+  }
 
   // Recuperas las entradas anteriores del localStorage
   let entradas = JSON.parse(localStorage.getItem('entradasBlog')) || [];

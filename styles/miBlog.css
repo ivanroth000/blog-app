@@ -111,3 +111,33 @@ main {
   color: #fff;
   border: none;
 }
+
+.contenidoVacio{
+  background: linear-gradient(#ff1cf7, #7b1db9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.ponteAEscribir{
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  border: 2px solid transparent; /* Ancho del borde y color transparente */
+  /* Radio para hacer el borde circular */
+  border-image: linear-gradient(to right, #ff1cf7, #7b1db9); /* Aplica un degradado horizontal de rojo a verde solo a los bordes del botón */
+  border-image-slice: 1; /* Define cómo se corta el degradado (1 significa que se corta en el centro) */
+  background-color: #ffffff; /* Hace el fondo del botón transparente para que solo se vea el degradado en los bordes */
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.ponteAEscribir:hover{
+  background: linear-gradient(to right, #ff1cf7, #7b1db9); /* Cambia el color de fondo al pasar sobre el botón */
+  color: #fff;
+  border: none;
+}

@@ -1,7 +1,26 @@
 let entradas = JSON.parse(localStorage.getItem('entradasBlog')) || [];
 entradas = entradas.reverse();
 
+
+
 let mainContenido = document.getElementsByClassName('contenido')[0];
+
+if (entradas.length === 0){
+  let contenidoVacio = document.createElement('p')
+  contenidoVacio.innerText = 'No hay ninguna entrada todavia'
+  contenidoVacio.classList.add('contenidoVacio')
+  mainContenido.appendChild(contenidoVacio)
+
+  let btnPonteAEscribir = document.createElement('button')
+  btnPonteAEscribir.innerText = 'Empezar a escribir'
+  mainContenido.appendChild(btnPonteAEscribir)
+  btnPonteAEscribir.classList.add('ponteAEscribir')
+
+  btnPonteAEscribir.onclick = () =>{
+    window.location.href = 'escribir.html';
+  }
+}
+
 entradas.forEach(function(entrada, index) {
   let divContenido = document.createElement('div');
   

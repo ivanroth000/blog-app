@@ -99,14 +99,15 @@ main {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 50px;
   border: 2px solid transparent; /* Ancho del borde y color transparente */
   /* Radio para hacer el borde circular */
   border-image: linear-gradient(to right, #ff1cf7, #7b1db9); /* Aplica un degradado horizontal de rojo a verde solo a los bordes del botón */
   border-image-slice: 1; /* Define cómo se corta el degradado (1 significa que se corta en el centro) */
   background-color: #ffffff; /* Hace el fondo del botón transparente para que solo se vea el degradado en los bordes */
-  font-size: 18px;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .btnPublicar:hover{
