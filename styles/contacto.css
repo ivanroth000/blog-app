@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz@12..96&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+}
+
+#titulo, #subtitulo {
+    margin-top: 20px;
+    margin-left: 250px; /* Ancho del menú lateral */
+    margin-right: auto;
+    text-align: center;
+    color: #cccccc;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+#subtitulo span {
+    background: linear-gradient(#ff1cf7, #7b1db9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /*SideBar*/
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #cccccc;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:not(.contacto):hover{
+    background: linear-gradient(#ff1cf7, #7b1db9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sidebar a:hover span {
+    background: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+  }
+
+  .linksContainer{
+    margin-top: 18px;
+}
+
+.contacto{
+    background: linear-gradient(#ff1cf7, #7b1db9);
+}  
+
+
+.formContainer {
+    margin-top: 20px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tituloRegistro {
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: xx-large;
+  }
+  
+  .labelForm {
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  .form {
+    padding-top: 20px;
+    width: 430px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: solid 2px #46034f;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px -10px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  input {
+    margin: 5px 0;
+  }
+  
+  input[type="text"] {
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 30px;
+    border: none;
+    border-bottom: 1px solid #9c1caf;
+    width: 350px;
+  }
+
+  textarea{
+        font-family: "Bebas Neue", sans-serif;
+        margin-left: 30px;
+        border: none;
+        border-bottom: 1px solid #9c1caf;
+        width: 350px;
+      }
+  
+  input[type="email"] {
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 30px;
+    border: none;
+    border-bottom: 1px solid #9c1caf;
+    width: 350px;
+  }
+  
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .labelForm {
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+
+  .buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .btn {
+    width: 150px;
+    background-color: #cf44f1;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background-color: #46034f;
+    color: white;
+  }
+
+
+  .btnNotificacion{
+    justify-content: center;
+    width: 100px;
+    color: #111;
+    background-color: #cf44f1;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Bebas Neue", sans-serif
+  }
+
+  .btnNotificacion:hover{ 
+    cursor: pointer;
+    font-family: "Bebas Neue", sans-serif !important;
+    background-color: #46034f !important;
+    color: white !important;
+  }
+
+
+  .swal-title{
+    font-family: "Bebas Neue", sans-serif !important;
+  }
+  .swal-text{
+    font-family: "Bebas Neue", sans-serif !important;
+  }
+  
+  .divError {
+    color: rgb(189, 41, 41);
+  }
+  
+  .msjError {
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 30px;
+  }
+  

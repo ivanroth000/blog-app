@@ -103,7 +103,8 @@ main {
   border-image: linear-gradient(to right, #ff1cf7, #7b1db9); /* Aplica un degradado horizontal de rojo a verde solo a los bordes del botón */
   border-image-slice: 1; /* Define cómo se corta el degradado (1 significa que se corta en el centro) */
   background-color: transparent; /* Hace el fondo del botón transparente para que solo se vea el degradado en los bordes */
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .leerMas:hover{
