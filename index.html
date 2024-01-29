@@ -8,10 +8,13 @@
     <title>Bienvenido</title>
   </head>
   <body>
-    <h1 class="titulo">
-      ¿Tenes ganas de... <span>Escribir</span> <span>Narrar</span>
-      <span>Comunicar</span> <span>Crear</span>?
-    </h1>
+    <section class="seccionInicio">
+      <h1 class="titulo">
+        ¿Tenes ganas de... <span>Escribir</span> <span>Narrar</span>
+        <span>Comunicar</span> <span>Crear</span>?
+      </h1>
+      <img class="imgBlog" src="imagenes/articulo.png" alt="">
+  </section>
     <div class="introduccionContainer">
       <p class="introduccion">
         ¿Tenes <span>historias</span> fascinantes,
@@ -20,129 +23,16 @@
         ¡Entonces, este es el lugar <span>para ti!</span> En nuestro blog,
         ofrecemos un espacio donde la <span>creatividad</span> y la
         <span>diversidad</span> se unen. <br />
-        <span>Regístrate</span> hoy mismo para formar parte de nuestra vibrante
+        <span>Únete</span> hoy mismo para formar parte de nuestra vibrante
         <span>comunidad</span> de escritores. <br />
         ¿Qué puedes esperar? Una plataforma <span>fácil</span> de usar,
         interacción con otros apasionados por la escritura y la oportunidad de
         destacar <span>tu voz única.</span> <br />
-        ¡No te pierdas la oportunidad de ser parte de esta
+        ¡No te pierdas la posibilidad de ser parte de esta
         <span>aventura</span> literaria! <br />
-        <span>Únete ahora</span> y da vida a tus ideas y conecta con otros
-        escritores. <br />
-        ¡Te estamos esperando para dar rienda suelta a la creatividad
-        <span>juntos!</span>
       </p>
     </div>
-    <div class="formContainer">
-      <form class="form">
-        <h2 class="tituloRegistro">Registro</h2>
-
-        <label class="labelForm" for="nombre">Nombre</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          onfocus="cambiarColorLabel('nombre')"
-          onblur="restaurarColorLabel('nombre')"
-        />
-        <div id="msjErrorNombre" class="divError"></div>
-
-        <label class="labelForm" for="apellido">Apellido</label>
-        <input
-          type="text"
-          id="apellido"
-          name="apellido"
-          onfocus="cambiarColorLabel('apellido')"
-          onblur="restaurarColorLabel('apellido')"
-        />
-        <div id="msjErrorApellido" class="divError"></div>
-
-        <label class="labelForm" for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          onfocus="cambiarColorLabel('email')"
-          onblur="restaurarColorLabel('email')"
-        />
-        <div id="msjErrorEmail" class="divError"></div>
-
-        <label class="labelForm" for="pais">Pais</label>
-        <input
-          type="text"
-          id="pais"
-          name="pais"
-          onfocus="cambiarColorLabel('pais')"
-          onblur="restaurarColorLabel('pais')"
-        />
-        <div id="msjErrorPais" class="divError"></div>
-
-        <label class="labelForm" for="ciudad">Ciudad</label>
-        <input
-          type="text"
-          id="ciudad"
-          name="ciudad"
-          onfocus="cambiarColorLabel('ciudad')"
-          onblur="restaurarColorLabel('ciudad')"
-        />
-        <div id="msjErrorCiudad" class="divError"></div>
-
-        <div class="checkboxContainer">
-          <input
-            type="checkbox"
-            id="hombre"
-            name="hombre"
-            onfocus="cambiarColorLabel('hombre')"
-            onblur="restaurarColorLabel('hombre')"
-          />
-          <label class="sexo" for="hombre">hombre</label>
-          <input
-            type="checkbox"
-            id="mujer"
-            name="mujer"
-            onfocus="cambiarColorLabel('mujer')"
-            onblur="restaurarColorLabel('mujer')"
-          />
-          <label class="sexo" for="mujer">mujer</label>
-          <div id="msjErrorSexo" class="divError"></div>
-        </div>
-        <br />
-
-        <label class="labelForm fecha" for="nacimiento"
-          >Fecha de nacimiento</label
-        >
-        <input
-          type="date"
-          id="nacimiento"
-          name="nacimiento"
-          onfocus="cambiarColorLabel('nacimiento')"
-          onblur="restaurarColorLabel('nacimiento')"
-        />
-        <div id="msjErrorNacimiento" class="divError"></div>
-
-        <label class="labelForm" for="contrasenia">Contraseña</label>
-        <input
-          type="password"
-          id="contrasenia"
-          onfocus="cambiarColorLabel('contrasenia')"
-          onblur="restaurarColorLabel('contrasenia')"
-        />
-        <div id="msjErrorContrasenia" class="divError"></div>
-
-        <label class="labelForm" for="contraseniaRepetida"
-          >Repita la contraseña</label
-        >
-        <input
-          type="password"
-          id="contraseniaRepetida"
-          onfocus="cambiarColorLabel('contraseniaRepetida')"
-          onblur="restaurarColorLabel('contraseniaRepetida')"
-        />
-        <div id="msjErrorContraseniaRepetida" class="divError"></div>
-
-        <button onclick="registrar()" class="btn" type="submit">Registrarse</button>
-      </form>
-    </div>
+    <a href="pages/escribir.html" class="btnInicio">Empezar a crear</a>
     <script src="index.js"></script>
   </body>
 </html>
